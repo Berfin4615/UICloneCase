@@ -15,8 +15,8 @@ export default function Papers() {
   const onApprove = () => console.log("approve");
 
   return (
-    <div className="relative w-full min-h-[520px]">
-      <div className="w-full mt-0 pl-16 mr-0 py-10">
+    <div className="relative min-h-[520px]">
+      <div className="pl-16">
         <div className="mt-0">
           {papers.map((p, idx) => (
             <PaperItem
@@ -57,7 +57,7 @@ function PaperItem({ paper, onView }) {
         <div className="absolute left-[-39px] top-[42px] bottom-[-30px] w-px bg-gray-300" />
       <div className="min-w-0 text-xs text-gray-700">
         <div className="flex items-baseline gap-2 mb-3">
-          <div className="font-semibold">{paper.typeLabel}</div>
+          <div className="font-semibold -ml-[20px]">{paper.typeLabel}</div>
           <div className={`${toneClasses[paper.statusTone]} font-semibold`}>
             – {paper.statusLabel}
           </div>

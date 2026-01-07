@@ -15,7 +15,8 @@ export default function ProfilePage() {
         <ProfileTabs tabs={tabs} activeTab={activeTab} onChange={setActiveTab} />
         <ProfilePanel activeTab={activeTab} />
       </div>
-      <Announcements />
+
+      {activeTab === "home" && <Announcements />}
     </div>
   );
 }

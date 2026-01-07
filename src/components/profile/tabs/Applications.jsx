@@ -23,17 +23,16 @@ export default function Applications() {
 function TimelineItem({ item }) {
   return (
     <div className="relative">
-      <div className="absolute left-[-44px] top-[6px] w-3 h-3 rounded-full bg-gray-500" />
-
-      <div className="space-y-3">
-        <div className="flex items-baseline gap-2 text-xs">
+      <div>
+        <div className="absolute left-[-44px]  w-3 h-3 rounded-full bg-gray-500" />
+        <div className="flex -ml-[20px]  items-baseline gap-2 text-xs">
           <div className="font-semibold text-gray-600">{item.title}</div>
           <div className={`font-semibold ${toneClasses[item.statusTone]}`}>
             – {item.status}
           </div>
         </div>
 
-        <div className="space-y-1 text-xs text-gray-600">
+        <div className="space-y-1 text-xs text-gray-600 mt-5">
           <Row label="Başvuru Sahibi:" value={item.owner} />
           <Row label="Pozisyon:" value={item.position} />
           <Row label="Başvuru Tarihi:" value={item.date} />
