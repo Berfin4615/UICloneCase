@@ -3,7 +3,7 @@ import heroBg from '../../assets/home_hero.png';
 const Hero = () => {
     return (
         <div>
-            <section className="relative w-full h-[520px] md:h-[620px] overflow-hidden">
+            <section className="relative w-full h-[520px] md:h-[800px] overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroBg})` }} />
                     <div className="absolute inset-0 bg-cover bg-center opacity-30" />
                     <div className="relative max-w-7xl mx-auto px-6 h-full flex items-center">
