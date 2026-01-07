@@ -1,9 +1,21 @@
+import Announcements from "../components/layout/Announcements";
+import { useMemo, useState } from "react";
+import ProfileHero from "../components/profile/ProfileHero";
+import ProfileTabs from "../components/profile/ProfileTabs";
+import ProfilePanel from "../components/profile/ProfilePanel";
+import { profileTabs } from "../components/profile/profileTabs";
+
 export default function ProfilePage() {
+  const tabs = useMemo(() => profileTabs, []);
+  const [activeTab, setActiveTab] = useState("home");
+
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-red-500">
-        Profile Page
-      </h1>
+    <div>
+      <div className="max-w-7xl mx-auto px-6 pt-10 pb-8">
+        <ProfileTabs tabs={tabs} activeTab={activeTab} onChange={setActiveTab} />
+        <ProfilePanel activeTab={activeTab} />
+      </div>
+      <Announcements />
     </div>
   );
 }

@@ -8,9 +8,9 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <Header onNavigate={setCurrentPage} currentPage={currentPage} />
-      {currentPage === 'home' ? <HomePage /> : <ProfilePage />}
+      {currentPage === "home" ? <HomePage /> : <ProfilePage />}
       <Footer />
     </div>
   );

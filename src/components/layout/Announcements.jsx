@@ -3,7 +3,7 @@ import annoBg from '../../assets/bg_an.png';
 
 export default function Announcements() {
     return (
-        <section className="bg-white py-8 -mt-20 relative z-10">
+        <section className="bg-white py-8 mt-5">
             <div className="mb-8 max-w-7xl mx-auto px-6">
                 <div className="flex items-center ml-7 gap-4 mb-6">
                     <button className="px-4 py-2 text-xs bg-slate-800 text-white rounded-lg">Duyurular</button>

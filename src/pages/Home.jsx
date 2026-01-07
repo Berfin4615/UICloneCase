@@ -1,7 +1,7 @@
 import Hero from '../components/home/Hero.jsx';
 import HomeActionBar from '../components/home/HomeActionBar.jsx';
 import HomeContentSection from '../components/home/HomeContentSection.jsx';
-import Announcements from '../components/home/Announcements.jsx';
+import Announcements from '../components/layout/Announcements.jsx';
 import Sponsors from '../components/home/Sponsors.jsx';
 
 const HomePage = () => {
