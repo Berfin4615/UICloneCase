@@ -9,7 +9,7 @@ const toneClasses = {
 export default function Applications() {
   return (
     <div className="relative min-h-[520px]">
-      <div className="absolute left-[26px] top-4 bottom-4 w-px bg-gray-200" />
+      <div className="absolute left-[26px] top-4 bottom-4 w-px bg-gray-200 hidden sm:block" />
 
       <div className="space-y-16 pl-16">
         {applications.map((item) => (
@@ -24,7 +24,7 @@ function TimelineItem({ item }) {
   return (
     <div className="relative">
       <div>
-        <div className="absolute left-[-44px]  w-3 h-3 rounded-full bg-gray-500" />
+        <div className="absolute left-[-44px]  w-3 h-3 rounded-full bg-gray-500 hidden sm:block" />
         <div className="flex -ml-[20px]  items-baseline gap-2 text-xs">
           <div className="font-semibold text-gray-600">{item.title}</div>
           <div className={`font-semibold ${toneClasses[item.statusTone]}`}>

@@ -7,7 +7,7 @@ import Settings from "./tabs/Settings";
 
 export default function ProfilePanel({ activeTab }) {
   return (
-    <div className="border border-gray-200 rounded-b-xl rounded-tr-xl bg-white px-10 py-10 w-full">
+    <div className="border border-gray-200 rounded-b-xl rounded-tr-xl bg-white w-full px-4 sm:px-8 lg:px-10 py-6 sm:py-10">
       {activeTab === "home" && <ProfileHero />}
       {activeTab === "personal" && <PersonalInfo />}
       {activeTab === "applications" && <Applications />}

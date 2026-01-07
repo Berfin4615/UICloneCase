@@ -52,9 +52,9 @@ export default function Papers() {
 function PaperItem({ paper, onView }) {
   return (
     <div className="relative w-full py-8">
-      <div className="absolute left-[-44px] top-[30px] w-3 h-3 rounded-full bg-gray-500" />
+      <div className="absolute left-[-44px] top-[30px] w-3 h-3 rounded-full bg-gray-500 hidden sm:block" />
 
-        <div className="absolute left-[-39px] top-[42px] bottom-[-30px] w-px bg-gray-300" />
+      <div className="absolute left-[-39px] top-[42px] bottom-[-30px] w-px bg-gray-300 hidden sm:block" />
       <div className="min-w-0 text-xs text-gray-700">
         <div className="flex items-baseline gap-2 mb-3">
           <div className="font-semibold -ml-[20px]">{paper.typeLabel}</div>
